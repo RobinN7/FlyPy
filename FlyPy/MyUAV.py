@@ -26,7 +26,7 @@ class Propeller(pygame.sprite.Sprite):
         self.uav = UAV
 
         self.rotating_frames = []
-        sprite_sheet = SpriteSheet(os.path.join("data","img","propeller1.png"))
+        sprite_sheet = SpriteSheet("propeller1.png")
         for frame_nb in range(7):
             frame = sprite_sheet.get_image(1, frame_nb*49, 235, 49)
             frame = pygame.transform.scale(frame, (234//4, 49//4))
